@@ -2,7 +2,7 @@
   <div class="list">
     <ul>
       <li v-for="sub in subs" :key="sub.start">
-        {{ sub.start }}-{{ sub.end }} : {{ sub.text }}
+        {{ sub.start }} -- {{ sub.end }} : {{ sub.text }}
       </li>
     </ul>
   </div>
