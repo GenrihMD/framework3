@@ -1,14 +1,9 @@
-import { ref, watch } from "vue";
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
 
-// создаём реактивную херню
-const counter = ref(0); // 0(нуль) - инит значение
-
-// вочим херню и выводим при изменении
-watch(counter, function() {
-  console.log(counter.value);
-});
-
-// интервалим инкремент (+1 раз в сек)
-setInterval(function() {
-  counter.value++;
-}, 1000);
+createApp(App)
+  .use(store)
+  .use(router)
+  .mount("#app");
