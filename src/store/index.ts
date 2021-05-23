@@ -1,5 +1,5 @@
 import { createStore } from "vuex-smart-module";
-import { foo } from "./foo.worker";
+import { foo } from "./foo";
 
 console.log(foo);
 
